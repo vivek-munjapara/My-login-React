@@ -80,13 +80,15 @@ export default function Registration() {
     <div>
       <Container maxWidth="sm">
         <div className='form'>
+          
           <h2 style={{
             display: "flex",
             justifyContent: "center",
             alignItems: "center"
           }}>Registration</h2>
+
           <form onSubmit={formSubmit}>
-            <FormControl sx={{ m: 1, width: '10ch' }} variant="outlined">
+            <FormControl sx={{ m: 1, width: '16%' }} variant="outlined">
 
               <InputLabel id="demo-simple-select-label">Title</InputLabel>
               <Select labelId="demo-simple-select-label" id="demo-simple-select" label="Title" name="title" onChange={handler}>
@@ -96,15 +98,15 @@ export default function Registration() {
               </Select>
             </FormControl>
 
-            <FormControl sx={{ m: 1, width: '24ch' }} variant="outlined">
+            <FormControl sx={{ m: 1, width: '37%' }} variant="outlined">
               <TextField id="outlined-basic" label="First Name" variant="outlined" name='firstName' onChange={handler} />
             </FormControl>
 
-            <FormControl sx={{ m: 1, width: '24ch' }} variant="outlined">
+            <FormControl sx={{ m: 1, width: '37%' }} variant="outlined">
               <TextField id="outlined-basic" label="Last Name" variant="outlined" name='lastName' onChange={handler} />
             </FormControl>
 
-            <FormControl sx={{ m: 1, width: '61.5ch' }} variant="outlined">
+            <FormControl sx={{ m: 1, width: "96%" }} variant="outlined">
               <TextField id="outlined-basic" label="Email" variant="outlined" name='email' onChange={handler} />
             </FormControl>
 
@@ -119,7 +121,7 @@ export default function Registration() {
 
             {/* password */}
 
-            <FormControl sx={{ m: 1, width: '30ch' }} variant="outlined" >
+            <FormControl sx={{ m: 1, width: "46%" }} variant="outlined" >
               <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
               <OutlinedInput
                 name='password'
@@ -145,7 +147,7 @@ export default function Registration() {
 
             {/* confirm password */}
 
-            <FormControl sx={{ m: 1, width: '30ch' }} variant="outlined">
+            <FormControl sx={{ m: 1, width: "47%" }} variant="outlined">
               <InputLabel htmlFor="outlined-adornment-password">Confirm Password</InputLabel>
               <OutlinedInput
                 id="outlined-adornment-password"
@@ -171,11 +173,8 @@ export default function Registration() {
 
             {/* <Checkbox {...label} onClick={handler} name="acceptTerms" label="Accept Terms" /> */}
 
-            <FormControlLabel style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center"
-            }}
+            <FormControlLabel
+              sx={{ m: 1, width: "96%" }}
               control={<Checkbox type="checkbox" name="acceptTerms" onClick={handler} />}
               label="Accept Terms"
             />
