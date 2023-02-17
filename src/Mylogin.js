@@ -13,12 +13,14 @@ import Button from '@mui/material/Button';
 import React from 'react';
 import { useState } from 'react';
 import Container from '@mui/material/Container';
+import { useNavigate } from 'react-router-dom';
 
 
 
 
 
 export default function Mylogin() {
+    const navigate = useNavigate();
 
     const [loginData, setLoginData] = useState({
         email: "",
@@ -47,6 +49,7 @@ export default function Mylogin() {
 
             if (y.status == 200 || y.status == 201) {
                 toast.success("Login successful..");
+                navigate('/dash');
                 localStorage.setItem("user", JSON.stringify(y.data))
             }
 
@@ -54,6 +57,7 @@ export default function Mylogin() {
             toast.error("Login Unsuccessful..")
             console.log(y.status);
         })
+
     };
 
 

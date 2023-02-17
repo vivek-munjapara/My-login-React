@@ -40,21 +40,21 @@ function Header(props) {
             <List>
                 <ListItem disablePadding>
                     <ListItemButton sx={{ textAlign: 'center', flexDirection: 'column' }}>
-                        <Link style={{ textDecoration: "none" }} to='/'>
+                        {/* <Link style={{ textDecoration: "none" }} to='/'> */}
                             <Button sx={{ color: '#a83632' }}>
                                 Login
                             </Button>
-                        </Link>
+                        {/* </Link> */}
                         <Link style={{ textDecoration: "none" }} to="reg">
                             <Button sx={{ color: '#a83632' }}>
                                 Registration
                             </Button>
                         </Link>
-                        <Link style={{ textDecoration: "none" }} to="dash">
+                        {/* <Link style={{ textDecoration: "none" }} to="dash">
                             <Button sx={{ color: '#a83632' }}>
                                 Account data
                             </Button>
-                        </Link>
+                        </Link> */}
 
                     </ListItemButton>
                 </ListItem>
@@ -105,11 +105,11 @@ function Header(props) {
                                 Registration
                             </Button>
                         </Link>
-                        <Link style={{ textDecoration: "none" }} to="dash">
+                        {/* <Link style={{ textDecoration: "none" }} to="dash">
                             <Button sx={{ color: '#fff' }}>
                                 Account data
                             </Button>
-                        </Link>
+                        </Link> */}
                     </Box>
                 </Toolbar>
             </AppBar>

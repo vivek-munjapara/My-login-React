@@ -16,9 +16,11 @@ import Button from '@mui/material/Button';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Container from '@mui/material/Container';
+import { useNavigate } from 'react-router-dom';
 
 
 export default function Registration() {
+  const navigate = useNavigate();
 
   const [showPassword, setShowPassword] = React.useState(false);
 
@@ -53,6 +55,7 @@ export default function Registration() {
 
       if (y.status == 200 || y.status == 201) {
         toast.success("Registration successful..");
+        navigate('/login');
       }
 
     })
