@@ -14,6 +14,7 @@ import React from 'react';
 import { useState } from 'react';
 import Container from '@mui/material/Container';
 import { useNavigate } from 'react-router-dom';
+import { Typography } from '@mui/material';
 
 
 
@@ -110,6 +111,13 @@ export default function Mylogin() {
                         Submit
                     </Button>
                 </form>
+
+                <Typography component="div" sx={{ position: 'absolute', top: '80%', left: '15%', color: "#fc2828", transform: 'translate(-50%,-50%)' }}
+                >
+                    <h4>Credential for testing purpose only:</h4>
+                    <p>User Name: vivekpatel@gmail.com</p>
+                    <p>Password: test1234</p>
+                </Typography>
             </Container>
 
 
